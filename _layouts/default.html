@@ -1,77 +1,130 @@
 <!DOCTYPE html>
 <html lang="ja">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>英語の勉強法ブログ</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        nav {
-            background: #444;
-            color: #fff;
-            padding: 0.5rem;
-            text-align: center;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 1rem;
-            text-decoration: none;
-        }
-        main {
-            padding: 2rem;
-        }
-        footer {
-            background: #333;
-            color: #fff;
-            text-align: center;
-            padding: 1rem 0;
-            position: fixed;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>英語学習 & アフェリエイトブログ</title>
+  <style>
+    :root {
+      --accent: #ffd700; /* 記事見出しの下線用カラー */
+      --bg: #ffffff;
+      --text: #333333;
+      --sidebar-bg: #f7f7f7; /* サイドバー背景色 */
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
+      color: var(--text);
+      background: var(--bg);
+      line-height: 1.7;
+    }
+
+    /*===== レイアウトラッパー =====*/
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 1rem;
+      display: grid;
+      grid-template-columns: 1fr 300px; /* 本文 : サイドバー */
+      grid-gap: 2rem;
+    }
+
+    /*===== 記事本文 =====*/
+    .content article {
+      padding: 1rem 0;
+    }
+    .content h1,
+    .content h2,
+    .content h3 {
+      position: relative;
+      padding-left: 0.3rem;
+    }
+    .content h1::before,
+    .content h2::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 0.35em;
+      background: var(--accent);
+      z-index: -1;
+    }
+
+    /*===== サイドバー =====*/
+    .sidebar {
+      background: var(--sidebar-bg);
+      padding: 1rem;
+      border-radius: 4px;
+    }
+    .sidebar h3 {
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+    .post-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .post-list li {
+      margin-bottom: 1rem;
+    }
+    .post-list a {
+      text-decoration: none;
+      color: var(--text);
+      transition: opacity 0.2s ease;
+    }
+    .post-list a:hover {
+      opacity: 0.7;
+    }
+
+    /*===== レスポンシブ対応 =====*/
+    @media (max-width: 900px) {
+      .container {
+        grid-template-columns: 1fr; /* 1 カラム */
+      }
+      .sidebar {
+        order: -1; /* モバイルでは記事より上に表示 */
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>英語の勉強法ブログ</h1>
-    </header>
-    <nav>
-        <a href="#about">勉強法について</a>
-        <a href="#tips">コツ</a>
-        <a href="#resources">リソース</a>
-    </nav>
-    <main>
-        <section id="about">
-            <h2>英語の勉強法とは？</h2>
-            <p>ここでは、英語を効率的に学ぶための基本的な方法について説明します。</p>
-        </section>
-        <section id="tips">
-            <h2>勉強のコツ</h2>
-            <p>リスニング、スピーキング、リーディング、ライティングのバランスを取ることが重要です。</p>
-        </section>
-        <section id="resources">
-            <h2>おすすめリソース</h2>
-            <ul>
-                <li>英語学習アプリ</li>
-                <li>オンライン英会話</li>
-                <li>英語のポッドキャスト</li>
-            </ul>
-        </section>
+  <header>
+    <div class="container">
+      <h1>英語学習 & アフェリエイトブログ</h1>
+    </div>
+  </header>
+
+  <div class="container">
+    <main class="content">
+      <article>
+        <h2>記事タイトルが入ります</h2>
+        <p>ここに記事本文を書きます。英語の勉強法やおすすめ教材のレビューを掲載し、読者が学習ステップをイメージできるようにしてください。</p>
+
+        <h3>おすすめ教材</h3>
+        <p>アフェリエイトリンクや商品の写真をここに配置します。</p>
+      </article>
     </main>
-    <footer>
-        <p>&copy; 2025 英語の勉強法ブログ</p>
-    </footer>
+
+    <aside class="sidebar">
+      <h3>過去の記事</h3>
+      <ul class="post-list">
+        <li><a href="#">VO2maxを高める英語勉強の休憩法</a></li>
+        <li><a href="#">忙しい社会人向け 15分英語ルーティン</a></li>
+        <li><a href="#">多読多聴でTOEIC 900突破</a></li>
+        <li><a href="#">おすすめ英語Podcastベスト10</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <footer>
+    <div class="container">
+      <small>&copy; 2025 EnglishBlog-Studying.com</small>
+    </div>
+  </footer>
 </body>
 </html>
