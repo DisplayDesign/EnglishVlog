@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 発音矯正のためのおすすめYouTubeチャンネル5選｜ネイティブのように話す近道！
-thumbnail: "発音矯正YouTube.png"
+thumbnail: "/assets/発音矯正YouTube.png"
 ---
 
 > 「英語の発音が通じない…」  
