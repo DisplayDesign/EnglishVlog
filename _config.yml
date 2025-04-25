@@ -11,7 +11,8 @@ twitter_username: jekyllrb
 github_username:  jekyll
 plugins:
   - jekyll-feed
-  
+
+   
 defaults:
   - scope:
       path:""
@@ -24,5 +25,6 @@ defaults:
       type:"posts"
     values:
       layout:"post"
-  
+
+permalink: pretty
 
