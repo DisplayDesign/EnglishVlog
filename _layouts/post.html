@@ -26,6 +26,14 @@
       line-height: 1.7;
     }
 
+    .thumbnail {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
     /*===== レイアウトラッパー =====*/
     .container {
       max-width: 1000px;
@@ -111,6 +119,10 @@
     <main class="content">
       <article>
         <h2>{{page.title}}</h2>
+
+        {% if page.thumbnail %}
+         <img src = "{{ page.thumbnail | relative_url }}" alt="{{ page.title }}" class = "thumbnail">
+        {% endif %}
         
         {{ content }}
 
