@@ -9,13 +9,15 @@
   <style>
     :root {
       --accent: #ffd700; /* 記事見出しの下線用カラー */
-      --bg: #ffffff;
+      --bg: #f7f7f7;    /* 全体背景色 */
       --text: #333333;
-      --sidebar-bg: #f7f7f7; /* サイドバー背景色 */
+      --sidebar-bg: #ffffff; /* サイドバー＆コンテナ用背景 */
     }
+
     * {
       box-sizing: border-box;
     }
+
     body {
       margin: 0;
       font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -27,11 +29,14 @@
     /*===== レイアウトラッパー =====*/
     .container {
       max-width: 1200px;
-      margin: 0 auto;
+      margin: 2rem auto;           /* 余白を上下にも追加して中央寄せを強調 */
       padding: 1rem;
+      background: #ffffff;         /* 本文＆サイドバー共通の背景 */
       display: grid;
       grid-template-columns: 1fr 300px; /* 本文 : サイドバー */
       grid-gap: 2rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
     /*===== 記事本文 =====*/
@@ -61,6 +66,7 @@
       background: var(--sidebar-bg);
       padding: 1rem;
       border-radius: 4px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
     }
     .sidebar h3 {
       margin-top: 0;
@@ -106,7 +112,7 @@
       <article>
         <h2>{{page.title}}</h2>
         
-         {{ content }}
+        {{ content }}
 
         <h3>おすすめ教材</h3>
         <p>アフェリエイトリンクや商品の写真をここに配置します。</p>
@@ -115,7 +121,9 @@
 
     <aside class="sidebar">
       <h3>過去の記事</h3>
-      <div><a href="#"><img src= 'assets/ChatGPT Image 2025年4月23日 23_00_28.png' height = 210px width = 300px;>VO2maxを高める英語勉強の休憩法</a></div>
+      <div>
+        <a href="#"><img src="assets/ChatGPT Image 2025年4月23日 23_00_28.png" height="210" width="300" alt="VO2maxを高める英語勉強の休憩法"></a>
+      </div>
       <ul class="post-list">
         <li><a href="_posts/2025-04-24-firstblog.md">VO2maxを高める英語勉強の休憩法</a></li>
         <li><a href="_posts/2025-04-25-USAvsBritish.md">忙しい社会人向け 15分英語ルーティン</a></li>
