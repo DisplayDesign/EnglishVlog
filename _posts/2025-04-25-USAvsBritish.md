@@ -2,7 +2,7 @@
 layout: post
 title: "アメリカ英語 vs イギリス英語、どっちを学ぶべき？｜迷っている人へのシンプルな選び方"
 date: 2025-04-25
-thumbnail:"assets/ChatGPT Image 2025年4月25日 15_15_31.png"
+thumbnail: "assets/ChatGPT Image 2025年4月25日 15_15_31.png"
 ---
 
 > 「英語を勉強したいけど、アメリカ英語とイギリス英語、どっちがいいの？」  
