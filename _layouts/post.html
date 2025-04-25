@@ -137,11 +137,18 @@
         <a href="#"><img src="assets/ChatGPT Image 2025年4月23日 23_00_28.png" height="210" width="300" alt="VO2maxを高める英語勉強の休憩法"></a>
       </div>
       <ul class="post-list">
-        <li><a href="_posts/2025-04-24-firstblog.md">VO2maxを高める英語勉強の休憩法</a></li>
-        <li><a href="_posts/2025-04-25-USAvsBritish.md">忙しい社会人向け 15分英語ルーティン</a></li>
-        <li><a href="_posts/2025-04-25-linking-words.md">多読多聴でTOEIC 900突破</a></li>
-        <li><a href="#">おすすめ英語Podcastベスト10</a></li>
-      </ul>
+  {% for post in site.posts limit:5 %}
+    <li>
+      <a href="{{ post.url | relative_url }}">
+        {% if post.thumbnail %}
+          <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" class="sidebar-thumbnail">
+        {% endif %}
+        {{ post.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
     </aside>
   </div>
 
