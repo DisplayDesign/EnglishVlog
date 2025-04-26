@@ -55,6 +55,7 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
+    /*======ヘッダー関連レイアウト=======*/
     .container-header {
       max-width: 1000px;
       margin: 2rem auto;           /* 余白を上下にも追加して中央寄せを強調 */
@@ -67,6 +68,18 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
      
     }
+    
+    .main-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 0.95rem;
+  transition: opacity 0.2s;
+}
+
+.main-nav a:hover {
+  opacity: 0.7;
+}
 
     /*===== 記事本文 =====*/
     .content article {
@@ -133,6 +146,15 @@
   <header>
     <div class="container-header">
       <h1>英語学習 & ブログ</h1>
+
+      <nav class="main-nav">
+      <ul>
+        <li><a href="/tags/幼児/">幼児</a></li>
+        <li><a href="/tags/高校受験/">高校受験</a></li>
+        <li><a href="/tags/大学受験/">大学受験</a></li>
+        <li><a href="/tags/大学生社会人/">大学生･社会人</a></li>
+      </ul>
+    </nav>
     </div>
   </header>
 
