@@ -16,11 +16,15 @@ thumbnail: "/assets/english-reaction-thumbnail.png"
 
 <br>
 
-| 状況         | フレーズ        | 例文                          |
-|--------------|-----------------|-------------------------------|
-| 驚き！       | `No way!`       | *No way! You got the job?*   |
-| すごい！     | `Awesome!`      | *Awesome! You finally did it.* |
-| 楽しみ！     | `How cool!`     | *How cool! I’d love to join.* |
+<div style="text-align: center;">
+
+| 状況       | フレーズ         | 例文                                |
+|------------|------------------|-------------------------------------|
+| 驚き！     | **No way!**      | **No way!** You got the job?       |
+| すごい！   | **Awesome!**     | **Awesome!** You finally did it.   |
+| 楽しみ！   | **How cool!**    | **How cool!** I’d love to join.    |
+
+</div>
 
 <br>
 
@@ -32,11 +36,15 @@ thumbnail: "/assets/english-reaction-thumbnail.png"
 
 <br>
 
-| 状況       | フレーズ             | 例文                              |
-|------------|----------------------|-----------------------------------|
-| 残念…     | `Oh no.`             | *Oh no, that sounds awful.*       |
-| 心配してる | `That’s terrible.`   | *That’s terrible. I hope you’re okay.* |
-| 大丈夫？   | `Are you okay?`      | *Are you okay? Do you need help?* |
+<div style="text-align: center;">
+
+| 状況         | フレーズ             | 例文                                       |
+|--------------|----------------------|--------------------------------------------|
+| 残念…       | **Oh no.**           | **Oh no.** That sounds awful.              |
+| 大丈夫？     | **That’s terrible.** | **That’s terrible.** I hope you’re okay.   |
+| 心配してるよ | **Are you okay?**    | **Are you okay?** Do you need help?        |
+
+</div>
 
 <br>
 
@@ -67,3 +75,4 @@ thumbnail: "/assets/english-reaction-thumbnail.png"
 - 👉 [英語の「微妙」をスマートに伝える表現集](#)
 - 👉 [つなぎ言葉で沈黙をなくすテクニック](#)
 - 👉 [ネイティブのように聞こえる話し方のコツ](#)
+
