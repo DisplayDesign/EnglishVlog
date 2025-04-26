@@ -69,17 +69,46 @@
      
     }
     
-    .main-nav a {
-  text-decoration: none;
-  color: #333;
-  font-weight: 600;
-  font-size: 0.95rem;
-  transition: opacity 0.2s;
+   /* ナビ全体のラッパー（背景＆中央寄せ） */
+.category-nav-wrapper {
+  background: #7bd5d4;            /* 明るくて親しみやすい水色 */
+  padding: 1rem 0;
 }
 
-.main-nav a:hover {
-  opacity: 0.7;
+/* ナビ本体：本文と幅を揃える */
+.category-nav {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
 }
+
+/* 各カテゴリリンク */
+.category-nav li {
+  margin: 0;
+}
+
+.category-nav a {
+  display: block;
+  padding: 0.6rem 1.2rem;
+  background: white;
+  border-radius: 6px;
+  color: #333;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+}
+
+.category-nav a:hover {
+  background: #e0f7f6;
+  transform: translateY(-2px);
+}
+
 
     /*===== 記事本文 =====*/
     .content article {
@@ -145,16 +174,16 @@
 <body>
   <header>
     <div class="container-header">
-      <h1>英語学習 & ブログ</h1>
 
-      <nav class="main-nav">
-      <ul>
-        <li><a href="/tags/幼児/">幼児</a></li>
-        <li><a href="/tags/高校受験/">高校受験</a></li>
-        <li><a href="/tags/大学受験/">大学受験</a></li>
-        <li><a href="/tags/大学生社会人/">大学生･社会人</a></li>
-      </ul>
-    </nav>
+      <nav class="category-nav-wrapper">
+  <ul class="category-nav">
+    <li><a href="/tags/幼児/">幼児</a></li>
+    <li><a href="/tags/高校受験/">高校受験</a></li>
+    <li><a href="/tags/大学受験/">大学受験</a></li>
+    <li><a href="/tags/大学生社会人/">大学生･社会人</a></li>
+  </ul>
+</nav>
+
     </div>
   </header>
 
