@@ -56,23 +56,43 @@
     }
 
     /*======ヘッダー関連レイアウト=======*/
-    .container-header {
-      max-width: 1000px;
-      margin: 2rem auto;           /* 余白を上下にも追加して中央寄せを強調 */
-      padding: 1rem;
-      background: #fff3b0;         /* 本文＆サイドバー共通の背景 */
-      display: grid;
-      grid-template-columns: 1fr 300px; /* 本文 : サイドバー */
-      grid-gap: 2rem;
-      border-radius: 6px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-     
-    }
     
-   /* ナビ全体のラッパー（背景＆中央寄せ） */
+    
+   /* ② ヘッダーの背景を変数に統一 --------------------------- */
+.container-header {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: var(--header-bg);  /* ★統一 */
+  display: grid;
+  grid-template-columns: 1fr;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+/* ③ ナビラッパーは背景を継承させる -------------------- */
 .category-nav-wrapper {
-  background: #7bd5d4;            /* 明るくて親しみやすい水色 */
-  padding: 1rem 0;
+  background: var(--header-bg);  /* ★ヘッダーと同色 */
+  padding: 0.5rem 0;
+}
+
+/* ④ 各ボタンも黄色で統一 ------------------------------- */
+.category-nav a {
+  display: block;
+  padding: 0.6rem 1.2rem;
+  background: var(--header-bg);  /* ★ボタンも黄色 */
+  border-radius: 6px;
+  color: var(--text);
+  font-weight: bold;
+  text-decoration: none;
+  transition: background 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);   /* やや薄めに */
+}
+
+/* ⑤ ホバー時は少し濃い黄色に --------------------------- */
+.category-nav a:hover {
+  background: #ffe48e;            /* ★彩度を下げた黄色 */
+  transform: translateY(-2px);
 }
 
 /* ナビ本体：本文と幅を揃える */
@@ -88,26 +108,6 @@
 }
 
 /* 各カテゴリリンク */
-.category-nav li {
-  margin: 0;
-}
-
-.category-nav a {
-  display: block;
-  padding: 0.6rem 1.2rem;
-  background: white;
-  border-radius: 6px;
-  color: #333;
-  font-weight: bold;
-  text-decoration: none;
-  transition: background 0.2s ease, transform 0.2s ease;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
-}
-
-.category-nav a:hover {
-  background: #e0f7f6;
-  transform: translateY(-2px);
-}
 
 
     /*===== 記事本文 =====*/
