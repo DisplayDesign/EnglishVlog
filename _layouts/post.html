@@ -6,93 +6,88 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>英語学習 & ブログ</title>
-
   <style>
-    /*===== カラーバリアブル =====*/
     :root {
-      --accent: #ffd700;  /* 見出しの下線色 */
-      --bg:     #f7f7f7;  /* 全体背景色   */
-      --text:   #333;     /* 文字色       */
-      --sidebar-bg: #fff; /* サイドバー背景 */
-      --header-bg: #fff3b0; /* ヘッダー（親しみやすい黄色）*/
+      --accent: #ffd700; /* 記事見出しの下線用カラー */
+      --bg: #f7f7f7;    /* 全体背景色 */
+      --text: #333333;
+      --sidebar-bg: #ffffff; /* サイドバー＆コンテナ用背景 */
     }
 
-    /*===== リセット・共通 =====*/
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue",
-                   Helvetica, Arial, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Helvetica, Arial, sans-serif;
       color: var(--text);
       background: var(--bg);
       line-height: 1.7;
     }
 
-    /*===== ヘッダー =====*/
-    .site-header {
-      background: var(--header-bg);
-      box-shadow: 0 2px 4px rgba(0,0,0,0.03);
-    }
-    .site-header .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      max-width: 1000px;      /* 本文と同じ幅 */
-      padding: 1rem;
-      margin: 0 auto;
-    }
-    .main-nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1.2rem;
-      margin: 0;
-      padding: 0;
-    }
-    .main-nav a {
-      text-decoration: none;
-      color: var(--text);
-      font-weight: 600;
-      font-size: 0.95rem;
-      transition: opacity 0.2s;
-    }
-    .main-nav a:hover { opacity: 0.7; }
+    .thumbnail {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+    .sidebar-thumbnail {
+  width: 100%;
+  max-width: 250px; /* サイドバーに合うサイズに調整 */
+  height: auto;
+  border-radius: 4px; /* 丸みを付けて見やすく */
+  margin-bottom: 5px;
+}
+
 
     /*===== レイアウトラッパー =====*/
     .container {
       max-width: 1000px;
-      margin: 2rem auto;
+      margin: 2rem auto;           /* 余白を上下にも追加して中央寄せを強調 */
       padding: 1rem;
-      background: #fff;
+      background: #ffffff;         /* 本文＆サイドバー共通の背景 */
       display: grid;
       grid-template-columns: 1fr 300px; /* 本文 : サイドバー */
-      gap: 2rem;
+      grid-gap: 2rem;
       border-radius: 6px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
+    .container-header {
+      max-width: 1000px;
+      margin: 2rem auto;           /* 余白を上下にも追加して中央寄せを強調 */
+      padding: 1rem;
+      background: #ffffff;         /* 本文＆サイドバー共通の背景 */
+      display: grid;
+      grid-template-columns: 1fr 300px; /* 本文 : サイドバー */
+      grid-gap: 2rem;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+      color: #fff3b0;
+    }
+
     /*===== 記事本文 =====*/
-    .content article { padding: 1rem 0; }
-    .content h1, .content h2, .content h3 {
+    .content article {
+      padding: 1rem 0;
+    }
+    .content h1,
+    .content h2,
+    .content h3 {
       position: relative;
       padding-left: 0.3rem;
     }
-    .content h1::before, .content h2::before {
+    .content h1::before,
+    .content h2::before {
       content: "";
       position: absolute;
-      left: 0; bottom: 0;
-      width: 100%; height: 0.35em;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 0.35em;
       background: var(--accent);
       z-index: -1;
-    }
-
-    /*===== サムネイル =====*/
-    .thumbnail {
-      width: 100%; max-width: 800px; height: auto;
-      border-radius: 5px; margin-bottom: 20px;
-    }
-    .sidebar-thumbnail {
-      width: 100%; max-width: 250px; height: auto;
-      border-radius: 4px; margin-bottom: 5px;
     }
 
     /*===== サイドバー =====*/
@@ -102,54 +97,54 @@
       border-radius: 4px;
       box-shadow: 0 1px 4px rgba(0,0,0,0.05);
     }
-    .sidebar h3 { margin-top: 0; font-size: 1.1rem; }
-    .post-list { list-style: none; margin: 0; padding: 0; }
-    .post-list li { margin-bottom: 1rem; }
+    .sidebar h3 {
+      margin-top: 0;
+      font-size: 1.1rem;
+    }
+    .post-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .post-list li {
+      margin-bottom: 1rem;
+    }
     .post-list a {
       text-decoration: none;
       color: var(--text);
-      transition: opacity 0.2s;
+      transition: opacity 0.2s ease;
     }
-    .post-list a:hover { opacity: 0.7; }
+    .post-list a:hover {
+      opacity: 0.7;
+    }
 
-    /*===== レスポンシブ =====*/
+    /*===== レスポンシブ対応 =====*/
     @media (max-width: 900px) {
-      .container { grid-template-columns: 1fr; }
-      .sidebar   { order: -1; }
-      .site-header .container { flex-direction: column; gap: 0.8rem; }
-      .main-nav ul { flex-wrap: wrap; gap: 0.8rem; }
+      .container {
+        grid-template-columns: 1fr; /* 1 カラム */
+      }
+      .sidebar {
+        order: -1; /* モバイルでは記事より上に表示 */
+      }
     }
   </style>
 </head>
-
 <body>
-  <!-- ヘッダー -->
-  <header class="site-header">
-    <div class="container">
+  <header>
+    <div class="container-header">
       <h1>英語学習 & ブログ</h1>
-
-      <!-- ナビゲーション -->
-      <nav class="main-nav">
-        <ul>
-          <li><a href="/tags/幼児/">幼児</a></li>
-          <li><a href="/tags/高校受験/">高校受験</a></li>
-          <li><a href="/tags/大学受験/">大学受験</a></li>
-          <li><a href="/tags/大学生社会人/">大学生･社会人</a></li>
-        </ul>
-      </nav>
     </div>
   </header>
 
-  <!-- 本文 + サイドバー -->
   <div class="container">
     <main class="content">
       <article>
-        <h2>{{ page.title }}</h2>
+        <h2>{{page.title}}</h2>
 
         {% if page.thumbnail %}
-          <img src="{{ page.thumbnail | relative_url }}" alt="{{ page.title }}" class="thumbnail">
+         <img src = "{{ page.thumbnail | relative_url }}" alt="{{ page.title }}" class = "thumbnail">
         {% endif %}
-
+        
         {{ content }}
 
         <h3>おすすめ教材</h3>
@@ -159,22 +154,25 @@
 
     <aside class="sidebar">
       <h3>過去の記事</h3>
+      <div>
+        <a href="#"><img src="assets/ChatGPT Image 2025年4月23日 23_00_28.png" height="210" width="300" alt="VO2maxを高める英語勉強の休憩法"></a>
+      </div>
       <ul class="post-list">
-        {% for post in site.posts limit:5 %}
-          <li>
-            <a href="{{ post.url | relative_url }}">
-              {% if post.thumbnail %}
-                <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" class="sidebar-thumbnail">
-              {% endif %}
-              {{ post.title }}
-            </a>
-          </li>
-        {% endfor %}
-      </ul>
+  {% for post in site.posts limit:5 %}
+    <li>
+      <a href="{{ post.url | relative_url }}">
+        {% if post.thumbnail %}
+          <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" class="sidebar-thumbnail">
+        {% endif %}
+        {{ post.title }}
+      </a>
+    </li>
+  {% endfor %}
+</ul>
+
     </aside>
   </div>
 
-  <!-- フッター -->
   <footer>
     <div class="container">
       <small>&copy; 2025 EnglishBlog-Studying.com</small>
