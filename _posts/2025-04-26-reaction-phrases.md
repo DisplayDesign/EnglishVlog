@@ -14,11 +14,15 @@ thumbnail: "/assets/english-reaction-thumbnail.png"
 
 ## ✅ 驚き・喜びを伝えるリアクション
 
-| 状況 | フレーズ | 例文 |
-|---|---|---|
-| 驚き！ | **No way!** | No way! You got the job? |
-| すごい！ | **Awesome!** | Awesome! You finally did it. |
-| 楽しみ！ | **How cool!** | How cool! I’d love to join. |
+<br>
+
+| 状況         | フレーズ        | 例文                          |
+|--------------|-----------------|-------------------------------|
+| 驚き！       | `No way!`       | *No way! You got the job?*   |
+| すごい！     | `Awesome!`      | *Awesome! You finally did it.* |
+| 楽しみ！     | `How cool!`     | *How cool! I’d love to join.* |
+
+<br>
 
 > 🌟 トーンを変えるだけでもニュアンスが変わるよ！
 
@@ -26,19 +30,24 @@ thumbnail: "/assets/english-reaction-thumbnail.png"
 
 ## ✅ 同情・心配を伝えるとき
 
-| 状況 | フレーズ | 例文 |
-|---|---|---|
-| 残念… | **Oh no.** | Oh no, that sounds awful. |
-| 大丈夫？ | **That’s terrible. / Are you okay?** | That’s terrible. I hope you’re okay. |
+<br>
+
+| 状況       | フレーズ             | 例文                              |
+|------------|----------------------|-----------------------------------|
+| 残念…     | `Oh no.`             | *Oh no, that sounds awful.*       |
+| 心配してる | `That’s terrible.`   | *That’s terrible. I hope you’re okay.* |
+| 大丈夫？   | `Are you okay?`      | *Are you okay? Do you need help?* |
+
+<br>
 
 ---
 
 ## ✅ 「ちょっとした相槌」もリアクションになる！
 
-- **Really?**（ほんとに？）
-- **I see.**（なるほど）
-- **Wow.**（わあ）
-- **That makes sense.**（それは納得だね）
+- **Really?**（ほんとに？）  
+- **I see.**（なるほど）  
+- **Wow.**（わあ）  
+- **That makes sense.**（それは納得だね）  
 - **No kidding!**（まじで！）
 
 > 💬 表情や声の抑揚とセットで使えば、さらに自然！
