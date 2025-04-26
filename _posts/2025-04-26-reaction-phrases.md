@@ -35,7 +35,7 @@ thumbnail: "/assets/english-reaction-thumbnail.png"
 
 <br>
 
-<div style="text-align: center;">
+<div markdown = "1" style="text-align: center;">
 
 | 状況         | フレーズ             | 例文                                       |
 |--------------|----------------------|--------------------------------------------|
