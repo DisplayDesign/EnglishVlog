@@ -16,13 +16,12 @@ thumbnail: "/assets/english-reaction-thumbnail.png"
 
 <br>
 
-<div style="text-align: center;">
+<div markdown="1" style="text-align:center;">
 
-| 状況       | フレーズ         | 例文                                |
-|------------|------------------|-------------------------------------|
-| 驚き！     | **No way!**      | **No way!** You got the job?       |
-| すごい！   | **Awesome!**     | **Awesome!** You finally did it.   |
-| 楽しみ！   | **How cool!**    | **How cool!** I’d love to join.    |
+| 状況   | フレーズ      | 例文                           |
+|--------|--------------|--------------------------------|
+| 驚き！ | **No way!**  | **No way!** You got the job?  |
+| すごい | **Awesome!** | **Awesome!** You finally did it.|
 
 </div>
 
