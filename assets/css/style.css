@@ -53,7 +53,6 @@
     
    /* ② ヘッダーの背景を変数に統一 --------------------------- */
 .container-header {
-  overflow: hidden;
   max-width: 1000px;
   margin: 2rem auto;
   padding: 1rem;
@@ -204,6 +203,6 @@
         grid-template-columns: 1fr; /* 1 カラム */
       }
       .sidebar {
-        order: -1; /* モバイルでは記事より上に表示 */
+        order: 1; /* モバイルでは記事より上に表示 */
       }
     }
