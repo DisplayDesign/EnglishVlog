@@ -48,8 +48,7 @@
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     }
 
- main.content{ flex:1; }  /* 本文が残り幅を取る */
-.sidebar     { width:300px; }
+
 
     /*======ヘッダー関連レイアウト=======*/
     
