@@ -77,36 +77,50 @@
   padding: 0.5rem 0;
 }
 
-/* ④ 各ボタンも黄色で統一 ------------------------------- */
-.category-nav a {
-  display: block;
-  padding: 0.6rem 1.2rem;
-  background: var(--header-bg);  /* ★ボタンも黄色 */
-  border-radius: 6px;
-  color: var(--text);
-  font-weight: bold;
-  text-decoration: none;
-  transition: background 0.2s ease, transform 0.2s ease;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.05);   /* やや薄めに */
+/* ① ボタン風スタイルを捨てる ------------------------------ */
+.category-nav a{
+  display:block;
+  padding:0.8rem 1.6rem;
+  background:transparent;   /* ← 背景塗りつぶしなし */
+  border-radius:0;          /* ← 角丸もなし */
+  box-shadow:none;          /* ← 影もなし */
+  color:var(--text);
+  font-weight:600;
+  text-decoration:none;
+  transition:color .2s ease;
 }
 
-/* ⑤ ホバー時は少し濃い黄色に --------------------------- */
-.category-nav a:hover {
-  background: #ffe48e;            /* ★彩度を下げた黄色 */
-  transform: translateY(-2px);
+.category-nav a:hover{
+  color:#000;               /* ← ホバー時だけ文字色を濃く */
 }
 
-/* ナビ本体：本文と幅を揃える */
-.category-nav {
-  max-width: 1000px;
-  margin: 0 auto;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 1rem;
-  list-style: none;
+/* ② 区切り線（縦ライン）を付ける --------------------------- */
+.category-nav{
+  max-width:1000px;
+  margin:0 auto;
+  padding:0;
+  display:flex;
+  gap:0;                    /* ← ボタン間の余白は線で作るので 0 */
+  list-style:none;
 }
+
+.category-nav li{
+  display:flex;
+  align-items:center;
+}
+
+.category-nav li:not(:last-child)::after{
+  content:"";
+  display:block;
+  width:1px;                /* ← 線の太さ */
+  height:60%;               /* ← 線の長さ（文字高さの 60% 程度） */
+  background:rgba(0,0,0,.15);/* ← 薄いグレー */
+  margin:0 1rem;            /* ← 線とテキストの間に余白 */
+}
+
+/* ③ ナビの背景はヘッダーと同じままで OK -------------------- */
+/* 既存の .category-nav-wrapper { background:var(--header-bg); } をそのまま残す */
+
 
 /* 各カテゴリリンク */
 
