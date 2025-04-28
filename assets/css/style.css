@@ -133,6 +133,13 @@
       z-index: -1;
     }
 
+.post-list .sidebar-thumbnail{
+  display:block;           /* ←ここが肝心！ 画像をブロックに */
+  width:100%;              /* すでに書いてあるが念のため */
+  height:auto;
+  margin-bottom: .4rem;    /* 画像とタイトルの間に少し余白 */
+}
+
     /*===== サイドバー =====*/
     .sidebar {
       background: var(--sidebar-bg);
@@ -158,6 +165,7 @@
       text-decoration: none;
       color: var(--text);
       transition: opacity 0.2s ease;
+      display:block;
     }
     .post-list a:hover {
       opacity: 0.7;
