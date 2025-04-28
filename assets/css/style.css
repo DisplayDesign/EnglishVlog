@@ -41,11 +41,11 @@
       margin: 2rem auto;           /* 余白を上下にも追加して中央寄せを強調 */
       padding: 1rem;
       background: #ffffff;         /* 本文＆サイドバー共通の背景 */
+      display: flex;
       grid-template-columns: 1fr 300px; /* 本文 : サイドバー */
       grid-gap: 2rem;
       border-radius: 6px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-      
     }
 
 
@@ -168,10 +168,6 @@
 .career {
   max-width: 800px;      /* 任意：段落が長い場合の読みやすさ調整 */
   margin: 2rem auto;     /* 周りの余白 */
-  padding: 1.5rem; /* ← ちょっと余白を大きめに */
-  border: 4px double #ccc; /* ← 二重線にする */
-  border-radius: 8px; /* ← 角も少し丸くするとさらにきれい */
-  
 }
 
 /* 上段を横並び */
@@ -213,4 +209,4 @@
       .sidebar {
         order: 1; /* モバイルでは記事より上に表示 */
       }
-    }
+    }　サイドバーとか、スクロール機能いらないんだけどどこを直せばいい？
