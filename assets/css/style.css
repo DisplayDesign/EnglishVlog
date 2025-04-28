@@ -71,39 +71,43 @@
   display:block;            /* 不要な隙間を消す */
 }
 
-/* ③ ナビラッパーは背景を継承させる -------------------- */
-.category-nav-wrapper {
-  background: var(--header-bg);  /* ★ヘッダーと同色 */
-  padding: 0.5rem 0;
+/* ───────── ① ナビをヘッダー中央に揃える ───────── */
+.category-nav-wrapper{
+  background:var(--header-bg);
+  padding:.5rem 0;
+  display:flex;            /* ← ラッパー自体を flex に */
+  justify-content:center;  /* ← 横方向ど真ん中 */
 }
 
-/* ① ボタン風スタイルを捨てる ------------------------------ */
-.category-nav a{
-  display:block;
-  padding:0.8rem 1.6rem;
-  background:transparent;   /* ← 背景塗りつぶしなし */
-  border-radius:0;          /* ← 角丸もなし */
-  box-shadow:none;          /* ← 影もなし */
-  color:var(--text);
-  font-weight:600;
-  text-decoration:none;
-  transition:color .2s ease;
-}
-
-.category-nav a:hover{
-  color:#000;               /* ← ホバー時だけ文字色を濃く */
-}
-
-/* ② 区切り線（縦ライン）を付ける --------------------------- */
 .category-nav{
-  max-width:1000px;
-  margin:0 auto;
-  padding:0;
   display:flex;
-  gap:0;                    /* ← ボタン間の余白は線で作るので 0 */
+  align-items:center;      /* ← 縦方向も中央に揃う */
+  gap:0;
+  margin:0;
+  padding:0;
   list-style:none;
 }
 
+/* ───────── ② 個別リンクの見た目 & ホバー ───────── */
+.category-nav a{
+  display:block;
+  padding:.8rem 1.6rem;
+  background:transparent;
+  border-radius:0;
+  box-shadow:none;
+  color:var(--text);
+  font-weight:600;
+  text-decoration:none;
+
+  opacity:1;                      /* ← 初期状態 */
+  transition:opacity .2s ease;    /* ← フェード用 */
+}
+
+.category-nav a:hover{
+  opacity:.4;                     /* ← ホバーで“薄く” */
+}
+
+/* ───────── ③ 区切り線（縦ライン） ───────── */
 .category-nav li{
   display:flex;
   align-items:center;
@@ -112,17 +116,20 @@
 .category-nav li:not(:last-child)::after{
   content:"";
   display:block;
-  width:1px;                /* ← 線の太さ */
-  height:60%;               /* ← 線の長さ（文字高さの 60% 程度） */
-  background:rgba(0,0,0,.15);/* ← 薄いグレー */
-  margin:0 1rem;            /* ← 線とテキストの間に余白 */
+  width:1px;
+  height:60%;
+  background:rgba(0,0,0,.15);
+  margin:0 1rem;
 }
 
-/* ③ ナビの背景はヘッダーと同じままで OK -------------------- */
-/* 既存の .category-nav-wrapper { background:var(--header-bg); } をそのまま残す */
+/* ───────── ④ モバイル幅で折り返す場合 ───────── */
+@media(max-width:600px){
+  .category-nav{flex-wrap:wrap;}
 
+  /* スマホでは区切り線を消したい場合は↓ */
+  /* .category-nav li:not(:last-child)::after{display:none;} */
+}
 
-/* 各カテゴリリンク */
 
 
     /*===== 記事本文 =====*/
