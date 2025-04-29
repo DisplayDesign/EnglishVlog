@@ -88,6 +88,10 @@
   list-style:none;
 }
 
+.category-nav li + li {
+  border-left: 1px solid #000;
+}
+
 /* ───────── ② 個別リンクの見た目 & ホバー ───────── */
 .category-nav a{
   display:block;
