@@ -179,6 +179,7 @@
       list-style: none;
       margin: 0;
       padding: 0;
+      maxwidth:250px
     }
     .post-list li {
       margin-bottom: 1rem;
