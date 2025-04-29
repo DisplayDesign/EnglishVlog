@@ -91,6 +91,10 @@
 .category-nav li + li {
   border-left: 1px solid #000;
 }
+.category-nav li{
+  flex-grow: 1;
+  text-align: center;
+}
 
 /* ───────── ② 個別リンクの見た目 & ホバー ───────── */
 .category-nav a{
