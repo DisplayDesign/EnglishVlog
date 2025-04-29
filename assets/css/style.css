@@ -88,13 +88,8 @@
   list-style:none;
 }
 
-.category-nav li + li {
-  border-left: 1px solid #000;
-}
-.category-nav li{
-  flex-grow: 1;
-  text-align: center;
-}
+
+
 
 /* ───────── ② 個別リンクの見た目 & ホバー ───────── */
 .category-nav a{
@@ -119,7 +114,13 @@
 .category-nav li{
   display:flex;
   align-items:center;
+  text-align:center;
+  flex-grow: 1;
 }
+.category-nav li + li {
+  border-left: 1px solid #000;
+}
+
 
 .category-nav li:not(:last-child)::after{
   content:"";
