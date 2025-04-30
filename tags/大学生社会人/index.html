@@ -1,16 +1,11 @@
 ---
-layout: default          # あなたの基本レイアウト名
-title: 大学生社会人 タグ記事一覧
-tag:  大学生社会人    # ←★ この行だけターゲットタグ名
-permalink: /tags/大学生社会人/
+layout: default
+title: 大学生社会人
 ---
 
-<h2>{{ page.tag }} の記事一覧</h2>
+<h1>#大学生社会人 の記事</h1>
 <ul>
-  {% assign tagname = page.tag %}
-  {% for post in site.posts %}
-    {% if post.tags contains tagname %}
-      <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-    {% endif %}
-  {% endfor %}
+{% for post in site.tags['大学生社会人'] %}
+  <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+{% endfor %}
 </ul>
