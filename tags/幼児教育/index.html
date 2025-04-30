@@ -6,7 +6,14 @@ title: 幼児教育
 <h1>#幼児教育 の記事</h1>
 <ul>
 {% for post in site.tags['幼児教育'] %}
-  <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
+  <li>
+    <a href="{{ post.url | relative_url }}">
+    {% if post.thumbnail %}
+          <img src="{{ post.thumbnail | relative_url }}" alt="{{ post.title }}" class="sidebar-thumbnail">
+        {% endif %}
+    {{ post.title }}
+  </a>
+  </li>
 {% endfor %}
 </ul>
 
