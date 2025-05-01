@@ -3,6 +3,9 @@ layout: post
 title: TOEIC高得点者が使う！英文読解を高速化する「つなぎ語」完全ガイド
 date: 2025-04-26
 thumbnail: "/assets/toeic-transition-thumbnail.png"
+tag: 
+  - 大学生社会人
+  - 大学受験
 ---
 
 > 📚 長文を読んでいて「話の流れがつかみにくい…」と感じたことはありませんか？
