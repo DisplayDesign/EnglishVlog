@@ -1,11 +1,31 @@
+
 ---
 layout: default
 title: 大学受験
+tag: 大学受験
 ---
 
 <h1>#大学受験 の記事</h1>
-<ul>
-{% for post in site.tags['大学受験'] %}
-  <li><a href="{{ post.url | relative_url }}">{{ post.title }}</a></li>
-{% endfor %}
-</ul>
+<article>
+  
+
+  <!-- パソコン用一覧グリッド -->
+  <div class="video-grid">
+    {% for post in site.posts %}
+      {% if post.tags contains "大学受験" %}
+        <div class="video-item">
+          <a href="{{ post.url | relative_url }}">
+            {% if post.thumbnail %}
+              <img
+                src="{{ post.thumbnail | relative_url }}"
+                alt="{{ post.title }}"
+                class="video-thumb"
+              >
+            {% endif %}
+            <p class="video-title">{{ post.title }}</p>
+          </a>
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</article>
