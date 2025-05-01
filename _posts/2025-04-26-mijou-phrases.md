@@ -3,6 +3,9 @@ layout: post
 title: 英語の「微妙」をスマートに伝える表現集｜場面別フレーズガイド
 date: 2025-04-26
 thumbnail: "/assets/expressing-mijou.png"
+tag: 
+  - 大学生社会人
+  - 大学受験
 ---
 
 > 🤔「うーん…それ、ちょっと微妙かも」と言いたいけど、英語でどう表現すればいい？
