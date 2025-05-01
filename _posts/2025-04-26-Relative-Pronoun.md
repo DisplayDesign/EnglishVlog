@@ -2,8 +2,8 @@
 layout:post
 title:"関係代名詞を「話し言葉」で使いこなすコツ｜会話でスラスラ出てくる方法とは？"
 tag: 
-  -大学生社会人
-  -大学受験
+  - 大学生社会人
+  - 大学受験
 ---
 
 ✨「This is the book...えーっと…that I read yesterday？」 ✨「The guy who…なんか続けにくい…💦」
