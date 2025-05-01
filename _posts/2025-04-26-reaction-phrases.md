@@ -3,6 +3,9 @@ layout: post
 title: 英語のリアクションマスター！会話を弾ませる神フレーズ集
 date: 2025-04-26
 thumbnail: "/assets/english-reaction-thumbnail.png"
+tag: 
+  - 大学生社会人
+  - 大学受験
 ---
 
 > 😶「会話が盛り上がらない…」そんな時は、リアクションが足りてないのかも！
